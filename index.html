@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum - Roberto Longo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+</head>
+<style>
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffcd2936;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark-mode {
+    background: linear-gradient(90deg, #000921, #160022);
+    color: #2e7d32;
+  }
+
+  .dark-mode .fancy-section {
+    background: linear-gradient(90deg, #000921, #160022);
+    color: #2e7d32;
+    padding: 3rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .dark-mode .experience-content {
+    background: linear-gradient(90deg, #000921, #160022);
+    color: #2e7d32;
+    padding: 3rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fancy-section {
+    background: linear-gradient(135deg, #007bff, #a5d6a7);
+    padding: 3rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .fancy-section:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 10px 25px rgba(0, 128, 0, 0.2);
+  }
+
+  img.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 128, 0, 0.3);
+  }
+
+  a {
+    color: #2e7d32;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .toggle-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .mode-toggle,
+  .language-toggle {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .mode-toggle:hover,
+  .language-toggle:hover {
+    background-color: #2e7d32;
+  }
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .icon svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+</style>
+</head>
+
+<body>
+  <div class="container mx-auto p-8">
+    <div class="toggle-buttons">
+      <button id="language-btn" class="language-toggle">Switch to English</button>
+      <button id="night-mode-btn" class="mode-toggle">Switch to Night Mode</button>
+    </div>
+
+    <header class="text-center mb-12">
+      <img src="Images/1700676652799[1].jpg" alt="Roberto Longo"
+        class="profile-img mb-4 mx-auto border-4 border-white shadow-xl rounded-full" />
+      <h1 class="text-4xl md:text-6xl font-extrabold text-green-700" id="title">Roberto Longo</h1>
+      <p class="text-xl md:text-2xl text-gray-600 mt-2" id="subtitle">Sviluppatore Full Stack</p>
+    </header>
+
+    <section class="mb-12 fancy-section">
+      <h2 class="text-3xl font-semibold mb-4 " id="about-title">Chi Sono</h2>
+      <p class="text-lg leading-relaxed text-gray-700" id="about-content">
+        Mi chiamo Roberto Longo, ho 21 anni e vivo a Torremaggiore, Puglia. Ho conseguito il diploma di Tecnico
+        Superiore per lo sviluppo software presso ITS Apulia Digital Maker. Con esperienze significative in Exprivia e
+        Betacom, ho affinato le mie competenze nello sviluppo front-end e back-end.
+      </p>
+    </section>
+
+    <section class="mb-12 fancy-section">
+      <h2 class="text-3xl font-semibold mb-4" id="skills-title">Competenze</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-5 gap-2">
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" /> HTML
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />CSS
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />JavaScript
+
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />Angular
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />Node.js
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />Java
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+          Spring Boot
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />TypeScript
+        </li>
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          
+          <img class="w-6 h-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+          MySQL
+        </li>
+
+        <li class="bg-yellow-100 p-4 rounded-lg icon">
+
+          
+          <img class="w-6 h-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+          PostgresSql
+        </li>
+        
+          
+
+      
+          
+      </ul>
+    </section>
+
+
+
+    <section class="mb-12 fancy-section">
+      <h2 class="text-3xl font-semibold mb-4" id="experience-title">Esperienze</h2>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md mb-6 experience-content">
+        <h3 class="text-xl font-bold">Exprivia</h3>
+        <p class="text-gray-600">Intern Software Developer | Nov 2023 - May 2024</p>
+        <ul class="mt-2 list-disc pl-5 text-gray-700 ">
+          <li>Sviluppo front-end con HTML, Bootstrap, JavaScript e jQuery</li>
+          <li>Realizzazione di server Node.js e integrazione con PostgreSQL</li>
+          <li>Progetto strategico per ENI per gestione dipendenti</li>
+        </ul>
+      </div>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md mb-6 experience-content">
+        <h3 class="text-xl font-bold">Betacom Group</h3>
+        <p class="text-gray-600">Intern | Oct 2024 - March 2025</p>
+        <ul class="mt-2 list-disc pl-5 text-gray-700">
+          <li>Formazione su Java, Spring Boot, Hibernate, Angular</li>
+          <li>Project management per sviluppo full-stack</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-12 fancy-section">
+      <h2 class="text-3xl font-semibold mb-4" id="education-title">Istruzione</h2>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>ITS Apulia Digital Maker - EQF Level 5 Diploma (2022-2024)</li>
+        <li>Università Mercatorum - Ingegneria Informatica (Aug 2024 - Present)</li>
+      </ul>
+    </section>
+
+    <section class="mb-12 fancy-section">
+      <h2 class="text-3xl font-semibold mb-4" id="certifications-title">Certificazioni</h2>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>Google Digital Training</li>
+        <li>EIPASS 7 Moduli User</li>
+        <li>First Certificate in English (B1)</li>
+      </ul>
+    </section>
+
+    <section class="fancy-section grid grid-cols-2 md:grid-cols-1">
+      <h2 class="text-3xl font-semibold mb-4" id="contact-title">Contatti</h2>
+      <div class="text-1xl font-semibold " >
+        <p class="text-gray-700">
+      Email: <a href="mailto:vasancol@gmail.com"
+            class="text-green-600">vasancol@gmail.com</a></p>
+        <div class="text-1xl font-semibold " id="github-title">
+          <p class="text-gray-700"id="github">Vedi i miei progetti: <a  href="https://github.com/RobLong03"
+              class="text-green-600">github.com/RobLong03</a></p>
+        </div>
+        <div>
+          <p class="text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/bobbysolo"
+              class="text-green-600">linkedin.com/in/bobbysolo</a></p>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+  <script>
+    const nightModeButton = document.getElementById("night-mode-btn");
+    const languageButton = document.getElementById("language-btn");
+    let isItalian = false;
+
+    const translations = {
+      en: {
+        title: "Roberto Longo",
+        subtitle: "Full Stack Developer",
+        aboutTitle: "About Me",
+        aboutContent: "My name is Roberto Longo, I am 21 years old and I live in Torremaggiore, Puglia. I obtained a Higher Technician diploma for software development at ITS Apulia Digital Maker. With significant experience at Exprivia and Betacom, I refined my skills in front-end and back-end development.",
+        skillsTitle: "Skills",
+        experienceTitle: "Experience",
+        educationTitle: "Education",
+        certificationsTitle: "Certifications",
+        
+        contactTitle: "Contacts",
+        contactContent: {
+          email: "Email: <a href='mailto:vasancol@gmail.com' class='text-green-600'>vasancol@gmail.com</a>",
+          github: "See my projects: <a href='https://github.com/RobLong03' class='text-green-600'>github.com/RobLong03</a>",
+          linkedin: "LinkedIn: <a href='https://www.linkedin.com/in/bobbysolo' class='text-green-600'>linkedin.com/in/bobbysolo</a>"
+        }
+      },
+      it: {
+        title: "Roberto Longo",
+        subtitle: "Sviluppatore Full Stack",
+        aboutTitle: "Chi Sono",
+        aboutContent: "Mi chiamo Roberto Longo, ho 21 anni e vivo a Torremaggiore, Puglia. Ho conseguito il diploma di Tecnico Superiore per lo sviluppo software presso ITS Apulia Digital Maker. Con esperienze significative in Exprivia e Betacom, ho affinato le mie competenze nello sviluppo front-end e back-end.",
+        skillsTitle: "Competenze",
+        experienceTitle: "Esperienza",
+        educationTitle: "Istruzione",
+        certificationsTitle: "Certificazioni",
+        
+        contactTitle: "Contatti",
+        contactContent: {
+          email: "Email: <a href='mailto:vasancol@gmail.com' class='text-green-600'>vasancol@gmail.com</a>",
+          github: "Vedi i miei progetti: <a href='https://github.com/RobLong03' class='text-green-600'>github.com/RobLong03</a>",
+          linkedin: "LinkedIn: <a href='https://www.linkedin.com/in/bobbysolo' class='text-green-600'>linkedin.com/in/bobbysolo</a>"
+        }
+      }
+    };
+
+    nightModeButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      nightModeButton.textContent = document.body.classList.contains("dark-mode")
+        ? "Switch to Day Mode"
+        : "Switch to Night Mode";
+    });
+
+    languageButton.addEventListener("click", () => {
+      isItalian = !isItalian;
+      const lang = isItalian ? "it" : "en";
+
+      document.getElementById("title").textContent = translations[lang].title;
+      document.getElementById("subtitle").textContent = translations[lang].subtitle;
+      document.getElementById("about-title").textContent = translations[lang].aboutTitle;
+      document.getElementById("about-content").textContent = translations[lang].aboutContent;
+      document.getElementById("skills-title").textContent = translations[lang].skillsTitle;
+
+      document.getElementById("experience-title").textContent = translations[lang].experienceTitle;
+
+      document.getElementById("github").innerHTML = translations[lang].contactContent.github;
+
+      document.getElementById("education-title").textContent = translations[lang].educationTitle;
+      document.getElementById("certifications-title").textContent = translations[lang].certificationsTitle;
+      
+      document.getElementById("contact-title").textContent = translations[lang].contactTitle;
+
+      languageButton.textContent = isItalian ? "Switch to English" : "Passa a Italiano";
+    });
+  </script>
+</body>
+
+</html>
