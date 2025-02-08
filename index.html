@@ -101,120 +101,127 @@
     width: 1.5rem;
     height: 1.5rem;
   }
-/* */
+
+  /* */
 
   .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  
-  grid-auto-rows: min-content; 
-  justify-content: center; 
-  align-content: start; 
-}
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
 
-.fancy-section {
-  margin-bottom: 3rem;
-  background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+    grid-auto-rows: min-content;
+    justify-content: center;
+    align-content: start;
+  }
 
-.fancy-section h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #333;
-}
+  .fancy-section {
+    margin-bottom: 3rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-ul.experience-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  .fancy-section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
 
-ul.experience-content li {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-color: #f8f8f8;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
+  ul.experience-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
-ul.experience-content li:hover {
-  transform: translateY(-4px);
-}
+  ul.experience-content li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
 
-ul.experience-content li img {
-  width: 40px;
-  height: 40px;
-  margin-right: 1rem;
-}
+  ul.experience-content li:hover {
+    transform: translateY(-4px);
+  }
 
-ul.experience-content li p {
-  margin: 0;
-  color: #555;
-  font-size: 1rem;
-}
+  ul.experience-content li img {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+  }
 
-#header{
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-column: span 2;
-}
-.section{
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-column: span 2;
-}
+  ul.experience-content li p {
+    margin: 0;
+    color: #555;
+    font-size: 1rem;
+  }
 
-#about-content {
+  #header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column: span 2;
+  }
+
+  .section {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column: span 2;
+  }
+
+  #about-content {
     margin-bottom: 20px;
-}
+  }
 
-.section-title {
+  .section-title {
     font-weight: bold;
-    color: #2d3748; /* Dark gray color for titles */
+    color: #2d3748;
+  
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
-}
+  }
 
-.text-lg {
-    font-size: 1.125rem; /* Adjust the font size */
+  .text-lg {
+    font-size: 1.125rem;
     line-height: 1.75rem;
-    color: #4a5568; /* Light gray color for text */
-}
+    color: #4a5568;
+    
+  }
 
-.text-gray-700 {
-    color: #4a5568; /* Light gray color for text */
-}
-
-/* Optional: Add spacing between paragraphs */
-.text-lg + .text-lg {
-    margin-top: 15px;
-}
+  .text-gray-700 {
+    color: #4a5568;
+    
+  }
 
   
+  .text-lg+.text-lg {
+    margin-top: 15px;
+  }
+
+
 
 </style>
 </head>
 
 <body>
   <div class="container mx-auto p-8">
-   
+
 
     <header class="text-center mb-12" id="header">
       <div class="toggle-buttons">
-        <button id="language-btn" class="language-toggle">Switch to English</button>
-        <button id="night-mode-btn" class="mode-toggle">Switch to Night Mode</button>
+        <button id="language-btn" class="language-toggle bg-green-50 p-6 rounded-lg shadow-md mb-6 
+        text-xl font-bold">Switch to English</button>
+        <button id="night-mode-btn" class="mode-toggle bg-green-50 p-6 rounded-lg shadow-md mb-6 
+        text-xl font-bold">Switch to Night Mode</button>
       </div>
       <img src="Images/1700676652799[1].jpg" alt="Roberto Longo"
         class="profile-img mb-4 mx-auto border-4 border-white shadow-xl rounded-full" />
@@ -222,112 +229,139 @@ ul.experience-content li p {
       <p class="text-xl md:text-2xl text-gray-600 mt-2" id="subtitle">Sviluppatore Full Stack</p>
     </header>
 
-    <section class="mb-12 fancy-section">
-      <h2 class="text-3xl font-semibold mb-4" id="about-title">
-        <span class="section-title">Chi Sono</span>
+
+    <section class="mb-12 fancy-section ">
+      
+      <h2 class="text-3xl font-semibold mb-4 " id="about-title">
+        <span class="section-title ">Chi Sono</span>
       </h2>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md mb-6 experience-content">
       <p class="text-lg text-gray-700" id="about-personal-info">
         <span class="section-title">Dati personali:</span>
         <span class="section-content">Mi chiamo Roberto Longo, ho 21 anni e vivo a Torremaggiore, in Puglia.</span>
       </p>
       <p class="text-lg text-gray-700" id="about-consulting-interest">
         <span class="section-title">Interesse per la consulenza:</span>
-        <span class="section-content">Sono attratto dai contesti di consulenza per la varietà dei progetti e la crescita professionale.</span>
+        <span class="section-content">Sono attratto dai contesti di consulenza per la varietà dei progetti e la crescita
+          professionale.</span>
       </p>
       <p class="text-lg text-gray-700" id="about-availability-for-travel">
         <span class="section-title">Disponibilità per trasferte:</span>
-        <span class="section-content">Sono aperto a trasferte e trasferimenti, mantenendo un buon equilibrio tra vita personale e professionale.</span>
+        <span class="section-content">Sono aperto a trasferte e trasferimenti, mantenendo un buon equilibrio tra vita
+          personale e professionale.</span>
       </p>
       <p class="text-lg text-gray-700" id="about-personal-passion">
         <span class="section-title">Passioni personali:</span>
-        <span class="section-content">Leggo libri di vario genere, dalla filosofia alla scienza e tecnologia, con interesse crescente per l’inglese. Recentemente, ho letto il libro 'Design Patterns' per approfondire la progettazione software.</span>
+        <span class="section-content">Leggo libri di vario genere, dalla filosofia alla scienza e tecnologia, con
+          interesse crescente per l’inglese. Recentemente, ho letto il libro 'Design Patterns' per approfondire la
+          progettazione software.</span>
       </p>
       <p class="text-lg text-gray-700" id="about-physical-activity-and-theater">
         <span class="section-title">Attività fisica e teatro:</span>
-        <span class="section-content">Mi dedico all’allenamento fisico e sono un attore teatrale, sviluppando soft skills come collaborazione, comunicazione e creatività.</span>
+        <span class="section-content">Mi dedico all’allenamento fisico e sono un attore teatrale, sviluppando soft
+          skills come collaborazione, comunicazione e creatività.</span>
       </p>
       <p class="text-lg text-gray-700" id="about-english-language">
         <span class="section-title">Lingua inglese:</span>
-        <span class="section-content">Possiedo una certificazione B1 di inglese e sono motivato a migliorarla per affrontare contesti internazionali.</span>
+        <span class="section-content">Possiedo una certificazione B1 di inglese e sono motivato a migliorarla per
+          affrontare contesti internazionali.</span>
       </p>
       <p class="text-lg text-gray-700" id="about-personal-characteristics">
         <span class="section-title">Caratteristiche personali:</span>
-        <span class="section-content">Mi considero disciplinato, curioso, versatile e motivato a contribuire al raggiungimento degli obiettivi aziendali.</span>
+        <span class="section-content">Mi considero disciplinato, curioso, versatile , capace di contribuire al
+          raggiungimento degli obiettivi aziendali.</span>
       </p>
+    </div>
     </section>
-    
-    
-    
+
+
+
 
     <section class="mb-12 fancy-section ">
       <h2 class="text-3xl font-semibold mb-4" id="skills-title">Competenze</h2>
-      <ul class="grid grid-cols-2 md:grid-cols-5 gap-2 bg-white p-6 rounded-lg shadow-md mb-6 experience-content" >
+      <ul class="grid grid-cols-2 md:grid-cols-5 gap-2 bg-white p-6 rounded-lg shadow-md mb-6 experience-content">
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
           <img class="w-6 h-6"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">HTML</p> 
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">HTML</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">CSS</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">CSS</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">JavaScript</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">JavaScript</p>
 
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">Angular</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">Angular</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6 "
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">Node.js</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">Node.js</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6 "
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" /> <p class="mt-2 list-disc pl-5 text-gray-700">Java</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">Java</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">Spring Boot</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">Spring Boot</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
           <img class="w-6 h-6"
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">TypeScript</p>
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">TypeScript</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
-          
-          <img class="w-6 h-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">MySQL</p>
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">MySQL</p>
 
         </li>
 
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
-          
-          <img class="w-6 h-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">PostgresSql</p>
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">PostgresSql</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
-          
-          <img class="w-6 h-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">Express.js</p>
+
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">Express.js</p>
         </li>
         <li class="p-4 rounded-lg icon  p-6 rounded-lg shadow-md mb-6 experience-content">
 
-          
-          <img class="w-6 h-6" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" /><p class="mt-2 list-disc pl-5 text-gray-700">Jquery</p>
-        </li>
-          
 
-      
-          
+          <img class="w-6 h-6"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+          <p class="mt-2 list-disc pl-5 text-gray-700">Jquery</p>
+        </li>
+
+
+
+
       </ul>
     </section>
 
@@ -354,39 +388,54 @@ ul.experience-content li p {
       </div>
     </section>
 
-    <section class="mb-12 fancy-section section" >
+    <section class="mb-12 fancy-section section">
       <h2 class="text-3xl font-semibold mb-4" id="education-title">Istruzione</h2>
-      <ul class="list-disc pl-5 text-gray-700">
-        <li>ITS Apulia Digital Maker - EQF Level 5 Diploma (2022-2024)</li>
-        <li>Università Mercatorum - Ingegneria Informatica (Aug 2024 - Present)</li>
-      </ul>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md mb-6 experience-content">
+        <ul class="mt-2 list-disc pl-5 text-gray-700">
+          <li>ITS Apulia Digital Maker - EQF Level 5 Diploma (2022-2024)</li>
+          <li>Università Mercatorum - Ingegneria Informatica (Aug 2024 - Present)</li>
+        </ul>
+      </div>
     </section>
 
     <section class="mb-12 fancy-section">
       <h2 class="text-3xl font-semibold mb-4" id="certifications-title">Certificazioni</h2>
-      <ul class="list-disc pl-5 text-gray-700">
-        <li>Google Digital Training</li>
-        <li>EIPASS 7 Moduli User</li>
-        <li>First Certificate in English (B1)</li>
-      </ul>
-    </section>
-
-    <section class="fancy-section grid grid-cols-2 md:grid-cols-1">
-      <h2 class="text-3xl font-semibold mb-4" id="contact-title">Contatti</h2>
-      <div class="text-1xl font-semibold " >
-        <p class="text-gray-700">
-      Email: <a href="mailto:vasancol@gmail.com"
-            class="text-green-600">vasancol@gmail.com</a></p>
-        <div class="text-1xl font-semibold " id="github-title">
-          <p class="text-gray-700"id="github">Vedi i miei progetti: <a  href="https://github.com/RobLong03"
-              class="text-green-600">github.com/RobLong03</a></p>
-        </div>
-        <div>
-          <p class="text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/bobbysolo"
-              class="text-green-600">linkedin.com/in/bobbysolo</a></p>
-        </div>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md mb-6 experience-content">
+        <ul class="mt-2 list-disc pl-5 text-gray-700">
+          <li>Google Digital Training</li>
+          <li>EIPASS 7 Moduli User</li>
+          <li>First Certificate in English (B1)</li>
+        </ul>
       </div>
     </section>
+    <!--<ul class="mt-2 list-disc pl-5 text-gray-700">
+          <li id="betacom1">Formazione su Java, Spring Boot, Hibernate, Angular</li>
+          <li id="betacom2">Project management per sviluppo full-stack</li>
+        </ul> <div class="text-1xl font-semibold " id="github-title">-->
+    <section class="mb-12 fancy-section">
+      <h2 class="text-3xl font-semibold mb-4 " id="contact-title">Contatti</h2>
+      <div class="bg-green-50 p-6 rounded-lg shadow-md mb-6 experience-content">
+
+        <ul class="mt-2 list-disc pl-5 text-gray-700">
+          <li>
+          Email: <a class="text-green-700" href="mailto:vasancol@gmail.com">vasancol@gmail.com</a>
+           
+          </li>
+          <li id="github">Vedi i miei progetti: <a class="text-green-700"   href="https://github.com/RobLong03">github.com/RobLong03</a></li>
+          <li>
+            <p >LinkedIn: <a href="https://www.linkedin.com/in/bobbysolo"
+                class="text-green-700">linkedin.com/in/bobbysolo</a></p>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <div>
+
+      </div>
+  </div>
+  </section>
 
 
   </div>
@@ -396,75 +445,75 @@ ul.experience-content li p {
     const languageButton = document.getElementById("language-btn");
     let isItalian = false;
 
-  
+
 
     const translationspersonal = {
-  it: {
-    about: {
-     
-      personalInfo: {
-        title: "Dati personali:",
-        content: "Mi chiamo Roberto Longo, ho 21 anni e vivo a Torremaggiore, in Puglia."
+      it: {
+        about: {
+
+          personalInfo: {
+            title: "Dati personali:",
+            content: "Mi chiamo Roberto Longo, ho 21 anni e vivo a Torremaggiore, in Puglia."
+          },
+          consultingInterest: {
+            title: "Interesse per la consulenza:",
+            content: "Sono attratto dai contesti di consulenza per la varietà dei progetti e la crescita professionale."
+          },
+          availabilityForTravel: {
+            title: "Disponibilità per trasferte:",
+            content: "Sono aperto a trasferte e trasferimenti, mantenendo un buon equilibrio tra vita personale e professionale."
+          },
+          personalPassion: {
+            title: "Passioni personali:",
+            content: "Leggo libri di vario genere, dalla filosofia alla scienza e tecnologia, con interesse crescente per l’inglese. Recentemente, ho letto il libro 'Design Patterns' per approfondire la progettazione software."
+          },
+          physicalActivityAndTheater: {
+            title: "Attività fisica e teatro:",
+            content: "Mi dedico all’allenamento fisico e sono un attore teatrale, sviluppando soft skills come collaborazione, comunicazione e creatività."
+          },
+          englishLanguage: {
+            title: "Lingua inglese:",
+            content: "Possiedo una certificazione B1 di inglese e sono motivato a migliorarla per affrontare contesti internazionali."
+          },
+          personalCharacteristics: {
+            title: "Caratteristiche personali:",
+            content: "Mi considero disciplinato, curioso, versatile , capace di contribuire al raggiungimento degli obiettivi aziendali."
+          }
+        }
       },
-      consultingInterest: {
-        title: "Interesse per la consulenza:",
-        content: "Sono attratto dai contesti di consulenza per la varietà dei progetti e la crescita professionale."
-      },
-      availabilityForTravel: {
-        title: "Disponibilità per trasferte:",
-        content: "Sono aperto a trasferte e trasferimenti, mantenendo un buon equilibrio tra vita personale e professionale."
-      },
-      personalPassion: {
-        title: "Passioni personali:",
-        content: "Leggo libri di vario genere, dalla filosofia alla scienza e tecnologia, con interesse crescente per l’inglese. Recentemente, ho letto il libro 'Design Patterns' per approfondire la progettazione software."
-      },
-      physicalActivityAndTheater: {
-        title: "Attività fisica e teatro:",
-        content: "Mi dedico all’allenamento fisico e sono un attore teatrale, sviluppando soft skills come collaborazione, comunicazione e creatività."
-      },
-      englishLanguage: {
-        title: "Lingua inglese:",
-        content: "Possiedo una certificazione B1 di inglese e sono motivato a migliorarla per affrontare contesti internazionali."
-      },
-      personalCharacteristics: {
-        title: "Caratteristiche personali:",
-        content: "Mi considero disciplinato, curioso, versatile e motivato a contribuire al raggiungimento degli obiettivi aziendali."
+      en: {
+        about: {
+          personalInfo: {
+            title: "Personal Information:",
+            content: "My name is Roberto Longo, I am 21 years old, and I live in Torremaggiore, Puglia."
+          },
+          consultingInterest: {
+            title: "Interest in Consulting:",
+            content: "I am attracted to consulting environments because of the variety of projects and professional growth."
+          },
+          availabilityForTravel: {
+            title: "Availability for Travel:",
+            content: "I am open to travel and relocations, while maintaining a good balance between personal and professional life."
+          },
+          personalPassion: {
+            title: "Personal Passions:",
+            content: "I read books of various genres, from philosophy to science and technology, with a growing interest in English. Recently, I read the book 'Design Patterns' to deepen my software design knowledge."
+          },
+          physicalActivityAndTheater: {
+            title: "Physical Activity and Theater:",
+            content: "I dedicate myself to physical training and I am a theater actor, developing soft skills such as collaboration, communication, and creativity."
+          },
+          englishLanguage: {
+            title: "English Language:",
+            content: "I hold a B1 English certification and am motivated to improve it to tackle international contexts."
+          },
+          personalCharacteristics: {
+            title: "Personal Characteristics:",
+            content: "I consider myself disciplined, curious, versatile, and able to contribute to the achievement of company goals."
+          }
+        }
       }
-    }
-  },
-  en: {
-    about: {
-      personalInfo: {
-        title: "Personal Information:",
-        content: "My name is Roberto Longo, I am 21 years old, and I live in Torremaggiore, Puglia."
-      },
-      consultingInterest: {
-        title: "Interest in Consulting:",
-        content: "I am attracted to consulting environments because of the variety of projects and professional growth."
-      },
-      availabilityForTravel: {
-        title: "Availability for Travel:",
-        content: "I am open to travel and relocations, while maintaining a good balance between personal and professional life."
-      },
-      personalPassion: {
-        title: "Personal Passions:",
-        content: "I read books of various genres, from philosophy to science and technology, with a growing interest in English. Recently, I read the book 'Design Patterns' to deepen my software design knowledge."
-      },
-      physicalActivityAndTheater: {
-        title: "Physical Activity and Theater:",
-        content: "I dedicate myself to physical training and I am a theater actor, developing soft skills such as collaboration, communication, and creativity."
-      },
-      englishLanguage: {
-        title: "English Language:",
-        content: "I hold a B1 English certification and am motivated to improve it to tackle international contexts."
-      },
-      personalCharacteristics: {
-        title: "Personal Characteristics:",
-        content: "I consider myself disciplined, curious, versatile, and motivated to contribute to the achievement of company goals."
-      }
-    }
-  }
-};
+    };
 
     const translations = {
       en: {
@@ -476,14 +525,14 @@ ul.experience-content li p {
         experienceTitle: "Experience",
         educationTitle: "Education",
         certificationsTitle: "Certifications",
-        exprivia:{
-          exprivia1:"Front-end development with HTML, Bootstrap, JavaScript and jQuery",
-          exprivia2:"Creation of Node.js server and integration with PostgreSQL",
-          exprivia3:"Strategic project for ENI for employee management"
+        exprivia: {
+          exprivia1: "Front-end development with HTML, Bootstrap, JavaScript and jQuery",
+          exprivia2: "Creation of Node.js server and integration with PostgreSQL",
+          exprivia3: "Strategic project for ENI for employee management"
         },
-        betacom:{
-          betacom1:"Training on Java, Spring Boot, Hibernate, Angular",
-          betacom2:"Project management for full-stack development",
+        betacom: {
+          betacom1: "Training on Java, Spring Boot, Hibernate, Angular",
+          betacom2: "Project management for full-stack development",
         },
 
         contactTitle: "Contacts",
@@ -502,15 +551,15 @@ ul.experience-content li p {
         experienceTitle: "Esperienza",
         educationTitle: "Istruzione",
         certificationsTitle: "Certificazioni",
-        
-        exprivia:{
-          exprivia1:"Sviluppo front-end con HTML, Bootstrap, JavaScript e jQuery",
-          exprivia2:"Realizzazione di server Node.js e integrazione con PostgreSQL",
-          exprivia3:"Progetto strategico per ENI per gestione dipendenti"
+
+        exprivia: {
+          exprivia1: "Sviluppo front-end con HTML, Bootstrap, JavaScript e jQuery",
+          exprivia2: "Realizzazione di server Node.js e integrazione con PostgreSQL",
+          exprivia3: "Progetto strategico per ENI per gestione dipendenti"
         },
-        betacom:{
-          betacom1:"Formazione su Java, Spring Boot, Hibernate, Angular",
-          betacom2:"Project management per sviluppo full-stack",
+        betacom: {
+          betacom1: "Formazione su Java, Spring Boot, Hibernate, Angular",
+          betacom2: "Project management per sviluppo full-stack",
         },
 
         contactTitle: "Contatti",
@@ -529,25 +578,25 @@ ul.experience-content li p {
         : "Switch to Night Mode";
     });
 
- 
-    document.addEventListener('DOMContentLoaded', function() {
-            // Simulate button click
-            languageButton.click();
-        });
 
-    
+    document.addEventListener('DOMContentLoaded', function () {
+      // Simulate button click
+      languageButton.click();
+    });
+
+
 
     languageButton.addEventListener("click", () => {
-   
-     
-      
+
+
+
       isItalian = !isItalian;
       const lang = isItalian ? "it" : "en";
-    
-      
+
+
       document.getElementById("subtitle").textContent = translations[lang].subtitle;
       document.getElementById("about-title").textContent = translations[lang].aboutTitle;
-     
+
       document.getElementById("skills-title").textContent = translations[lang].skillsTitle;
 
       document.getElementById("experience-title").textContent = translations[lang].experienceTitle;
@@ -564,38 +613,38 @@ ul.experience-content li p {
 
       document.getElementById("education-title").textContent = translations[lang].educationTitle;
       document.getElementById("certifications-title").textContent = translations[lang].certificationsTitle;
-      
+
       document.getElementById("contact-title").textContent = translations[lang].contactTitle;
-      
+
       languageButton.textContent = isItalian ? "Switch to English" : "Passa a Italiano";
       setTimeout(() => {
         updateContent(lang);
       }, 500);
     });
-    
+
     function updateContent(lang) {
-  
+
       const sections = [
 
-    { id: "about-personal-info", key: "personalInfo" },
-    { id: "about-consulting-interest", key: "consultingInterest" },
-    { id: "about-availability-for-travel", key: "availabilityForTravel" },
-    { id: "about-personal-passion", key: "personalPassion" },
-    { id: "about-physical-activity-and-theater", key: "physicalActivityAndTheater" },
-    { id: "about-english-language", key: "englishLanguage" },
-    { id: "about-personal-characteristics", key: "personalCharacteristics" }
-];
+        { id: "about-personal-info", key: "personalInfo" },
+        { id: "about-consulting-interest", key: "consultingInterest" },
+        { id: "about-availability-for-travel", key: "availabilityForTravel" },
+        { id: "about-personal-passion", key: "personalPassion" },
+        { id: "about-physical-activity-and-theater", key: "physicalActivityAndTheater" },
+        { id: "about-english-language", key: "englishLanguage" },
+        { id: "about-personal-characteristics", key: "personalCharacteristics" }
+      ];
 
-  sections.forEach(section => {
-    const element = document.getElementById(section.id);
-    if (element) {
-      element.innerHTML = `
+      sections.forEach(section => {
+        const element = document.getElementById(section.id);
+        if (element) {
+          element.innerHTML = `
         <span class="section-title">${translationspersonal[lang].about[section.key].title}</span>
         <span class="section-content">${translationspersonal[lang].about[section.key].content}</span>
       `;
+        }
+      });
     }
-  });
-}
   </script>
 </body>
 
